@@ -1,0 +1,2 @@
+
+new sfWidgetFormInputImageWithLightbox(array("file_src"=>$src, 'auto_response'=>true, 'lightbox_js'=>array('lightbox/lightbox.js'), 'lightbox_css'=>array('/js/lightbox/lightbox.css')))
