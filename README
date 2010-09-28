@@ -1,2 +1,14 @@
+#most simple setup.
+#you must add js & css in your action yourself.
+new sfWidgetFormInputImageWithLightbox(array('file_src'=>'/url/for/image'));
 
-new sfWidgetFormInputImageWithLightbox(array("file_src"=>$src, 'auto_response'=>true, 'lightbox_js'=>array('lightbox/lightbox.js'), 'lightbox_css'=>array('/js/lightbox/lightbox.css')))
+#standard setup.
+#js & css for lightbox are automatically added to your app's response object
+new sfWidgetFormInputImageWithLightbox(array('file_src'=>'url/for/image', 'auto_response'=>true));
+
+#custom setup.
+#you can change lightbox.js to use.
+new sfWidgetFormInputImageWithLightbox(array("file_src"=>'/url/for/image', 'auto_response'=>true, 'lightbox_js'=>array('jquery-lightbox/jquery.js', 'jquery-lightbox/lightbox.js'), 'lightbox_css'=>array('/js/jquery-lightbox/lightbox.css')));
+
+#you can change size of the thumbnail.
+new sfWidgetFormInputImageWithLightbox(array("file_src"=>'/url/for/image', 'width'=>'300'));
